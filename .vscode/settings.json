@@ -3,5 +3,7 @@
     "azureLogicAppsV2.projectLanguage": "C#",
     "azureLogicAppsV2.projectRuntime": "~3",
     "debug.internalConsoleOptions": "neverOpen",
-    "azureLogicAppsV2.preDeployTask": "publish"
+    "azureLogicAppsV2.preDeployTask": "publish",
+    // Set environment variables for VS Code and sub-processes
+    "remoteEnv": { "PATH": "${containerEnv:PATH}:/functionsdownload/azure-functions-cli" }
 }
