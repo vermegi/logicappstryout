@@ -351,3 +351,4 @@ MigrationBackup/
 
 # azurite ignore
 __azurite_*
+__blobstorage*
