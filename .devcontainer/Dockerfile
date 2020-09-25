@@ -61,7 +61,7 @@ RUN wget https://github.com/Azure/azure-functions-core-tools/releases/download/3
     && chmod +x func \
     && chmod +x gozip \
     && ./func \
-    && export PATH='pwd':$PATH
+    && export PATH=`pwd`:$PATH
 
 # Uncomment to opt out of Func CLI telemetry gathering
 #ENV FUNCTIONS_CORE_TOOLS_TELEMETRY_OPTOUT=true
